@@ -1,0 +1,86 @@
+.app-root-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    width: 35vw;
+
+    .date {
+      margin-bottom: 25px;
+
+      .mat-form-field-infix {
+        padding: 10px 0 13px 0;
+      }
+
+      span {
+        margin-right: 10px;
+      }
+    }
+
+    .form-array .diagnoses {
+      margin-top: 10px;
+
+      div {
+       display: flex;
+       justify-content: space-between;
+      }
+
+      mat-form-field {
+        width: 49%;
+
+        .mat-form-field-infix {
+          padding: 10px 0 13px 0;
+        }
+
+        .mat-form-field-wrapper {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        margin: 10px 10px 10px 0;
+        width: 100px;
+        cursor: pointer;
+        color: dodgerblue;
+      }
+
+      button {
+        width: 100%;
+        color: dodgerblue;
+        border: 1px solid dodgerblue;
+        padding: 15px;
+        border-radius: 3px;
+        background: #fff;
+        cursor: pointer;
+        margin-bottom: 25px;
+
+        &[disabled] {
+          opacity: .5;
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .json {
+      height: 100px;
+      overflow-y: scroll;
+      border: 1px solid gray;
+      color: gray;
+    }
+  }
+
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
